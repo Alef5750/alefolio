@@ -28,6 +28,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const currentYear = new Date().getFullYear();
   return (
     <html lang="en">
       <body
@@ -45,7 +46,7 @@ export default function RootLayout({
         </main>
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
           {/* TODO: MAKE YEAR AUTOMATICALLY UPDATE */}
-          <p>&copy; 2024 Alef Lewitt. All rights reserved.</p>
+          <p>&copy; {currentYear} Alef Lewitt. All rights reserved.</p>
         </footer>
       </body>
     </html>
