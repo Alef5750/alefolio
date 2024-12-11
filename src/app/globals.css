@@ -19,3 +19,8 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+header, footer{
+  background-color: aquamarine;
+  color:#0a0a0a
+}
