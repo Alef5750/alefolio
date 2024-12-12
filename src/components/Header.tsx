@@ -3,7 +3,7 @@ import React, { FC } from "react";
 
 const Header: FC = () => {
   return (
-    <header className="flex justify-around">
+    <header className="flex justify-around bg-green-300">
       <Link href="/">Home</Link>
       <Link href="/about">About</Link>
       <Link href="/contact">Contact Me</Link>

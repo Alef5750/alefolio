@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 // These styles apply to every route in the application
 import "./globals.css";
-import Header from "@/components/Header";
 
 //Font Configuration; applied to <body>
 const geistSans = Geist({
@@ -28,7 +28,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const currentYear = new Date().getFullYear();
   return (
     <html lang="en">
       <body
@@ -38,9 +37,7 @@ export default function RootLayout({
         <main className="flex-grow p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
           {children}
         </main>
-        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-          <p>&copy; {currentYear} Alef Lewitt. All rights reserved.</p>
-        </footer>
+        <Footer />
       </body>
     </html>
   );
