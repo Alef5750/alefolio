@@ -8,28 +8,4 @@ export const projects = [
     blurb:
       "A combination task manager with the classic pomodoro timer method for maximizing productivity by breaking up tasks into small, manageable time-units.",
   },
-  {
-    id: 2,
-    title: "Demo 2",
-    link: "https://pomo-productivity.netlify.app/",
-    imgSrc: pomodoroImg,
-    blurb:
-      "A combination task manager with the classic pomodoro timer method for maximizing productivity by breaking up tasks into small, manageable time-units.",
-  },
-  {
-    id: 3,
-    title: "Demo 3",
-    link: "https://pomo-productivity.netlify.app/",
-    imgSrc: pomodoroImg,
-    blurb:
-      "A combination task manager with the classic pomodoro timer method for maximizing productivity by breaking up tasks into small, manageable time-units.",
-  },
-  {
-    id: 4,
-    title: "Demo 4",
-    link: "https://pomo-productivity.netlify.app/",
-    imgSrc: pomodoroImg,
-    blurb:
-      "A combination task manager with the classic pomodoro timer method for maximizing productivity by breaking up tasks into small, manageable time-units.",
-  },
 ];
