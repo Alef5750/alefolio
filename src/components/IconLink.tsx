@@ -3,7 +3,7 @@ import React, { FC } from "react";
 
 interface IconLinkProps {
   href: string;
-  size: { width: number; height: number };
+  size: { width: string; height: string };
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   label?: string;
 }

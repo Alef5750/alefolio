@@ -12,25 +12,25 @@ const ContactPage = () => {
       <IconLink
         href="https://wa.me/+972549419450"
         Icon={IoLogoWhatsapp}
-        size={{ width: 40, height: 40 }}
+        size={{ width: "40", height: "40" }}
         label="Reach out on WhatsApp!"
       />
       <IconLink
         href="mailto:alewitt@gmail.com"
         Icon={SiMinutemailer}
-        size={{ width: 40, height: 40 }}
+        size={{ width: "40", height: "40" }}
         label="Send me an email!"
       />
       <IconLink
         href="https://github.com/Alef5750"
         Icon={FaGithub}
-        size={{ width: 40, height: 40 }}
+        size={{ width: "40", height: "40" }}
         label="Check out my GitHub!"
       />
       <IconLink
         href="https://dev.to/aleflewitt"
         Icon={FaDev}
-        size={{ width: 40, height: 40 }}
+        size={{ width: "40", height: "40" }}
         label="Peruse my DEV articles!"
       />
     </div>
