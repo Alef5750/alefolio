@@ -5,14 +5,17 @@ interface IconLinkProps {
   href: string;
   size: { width: number; height: number };
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  label?: string;
 }
-const IconLink: FC<IconLinkProps> = ({ href, size, Icon }) => {
+const IconLink: FC<IconLinkProps> = ({ href, size, Icon, label }) => {
   return (
     <Link
-      className=" text-green-300 hover:text-green-500 transition-colors duration-300"
+      className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-gray-500 hover:shadow-2xl hover:shadow-green-300 text-green-300 hover:text-green-500 flex justify-center items-center"
       href={href}
+      target="_blank"
     >
       <Icon className={`w-${size.width} h-${size.height}`} />
+      <span className="text-3xl">{label}</span>
     </Link>
   );
 };
