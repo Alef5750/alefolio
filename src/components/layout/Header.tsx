@@ -3,12 +3,22 @@ import React, { FC } from "react";
 
 const Header: FC = () => {
   return (
-    <header className="flex justify-around bg-green-300">
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
-      <Link href="/contact">Contact Me</Link>
-      <Link href="/projects">My Projects</Link>
-      <Link href="/skills">Technical Skills</Link>
+    <header className="flex justify-around bg-green-300 text-3xl font-thin">
+      <Link className="hover:text-gray-500" href="/">
+        Home
+      </Link>
+      <Link className="hover:text-gray-500" href="/about">
+        About
+      </Link>
+      <Link className="hover:text-gray-500" href="/contact">
+        Contact Me
+      </Link>
+      <Link className="hover:text-gray-500" href="/projects">
+        My Projects
+      </Link>
+      <Link className="hover:text-gray-500" href="/skills">
+        Technical Skills
+      </Link>
     </header>
   );
 };
