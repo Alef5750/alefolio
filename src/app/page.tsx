@@ -12,9 +12,6 @@ const HomePage = () => {
         className="rounded-3xl"
       />
       <div className="text-3xl flex flex-col gap-6">
-        <span className="text-5xl ">
-          Atoms of Innovation: <br />
-        </span>
         <span className="italic">
           Precision Engineering for Exceptional Web Experiences
         </span>
