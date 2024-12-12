@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 // These styles apply to every route in the application
 import "./globals.css";
-import Link from "next/link";
+import Header from "@/components/Header";
 
 //Font Configuration; applied to <body>
 const geistSans = Geist({
@@ -34,18 +34,11 @@ export default function RootLayout({
       <body
         className={`flex flex-col min-h-screen ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex justify-around">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact Me</Link>
-          <Link href="/projects">My Projects</Link>
-          <Link href="/skills">Technical Skills</Link>
-        </header>
+        <Header />
         <main className="flex-grow p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
           {children}
         </main>
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-          {/* TODO: MAKE YEAR AUTOMATICALLY UPDATE */}
           <p>&copy; {currentYear} Alef Lewitt. All rights reserved.</p>
         </footer>
       </body>
