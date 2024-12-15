@@ -3,7 +3,7 @@ import React, { FC } from "react";
 
 const Header: FC = () => {
   return (
-    <header className="flex justify-around bg-green-300 text-3xl font-thin">
+    <header className="sticky top-0 z-50 flex justify-around bg-green-300 text-3xl font-thin">
       <Link className="hover:text-gray-500" href="/">
         Home
       </Link>

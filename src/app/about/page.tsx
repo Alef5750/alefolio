@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <section className="flex flex-col gap-6 items-center">
-      <h1 className="font-extrabold text-5xl mb-6">About Me</h1>
+    <section className="flex flex-col items-center">
+      <h1 className="font-extrabold text-5xl mb-6 text-center">About Me</h1>
       <p className="max-w-3xl text-3xl">
         I build tools with a purpose: to make life simpler, more productive, and
         focused on what truly matters. Whether it&lsquo;s crafting seamless web
