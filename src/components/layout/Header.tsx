@@ -3,7 +3,7 @@ import React, { FC } from "react";
 
 const Header: FC = () => {
   return (
-    <header className="sticky top-0 z-50 flex justify-around bg-green-300 text-3xl font-thin">
+    <header className="sticky top-0 z-50 py-2 flex justify-around bg-green-300 text-3xl font-thin">
       <Link className="hover:text-gray-500" href="/">
         Home
       </Link>
@@ -16,8 +16,8 @@ const Header: FC = () => {
       <Link className="hover:text-gray-500" href="/projects">
         My Projects
       </Link>
-      <Link className="hover:text-gray-500" href="/skills">
-        Technical Skills
+      <Link className="hover:text-gray-500" href="/technologies">
+        Technologies
       </Link>
     </header>
   );

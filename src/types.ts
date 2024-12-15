@@ -6,5 +6,11 @@ export interface IProject {
   title: string;
   link: string;
   blurb: string;
-  // TODO: ADD "tech" array of strings
+  // TODO: ADD array of ids of tech skills
+}
+
+export interface ITech {
+  id: number;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  name: string;
 }
