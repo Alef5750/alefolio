@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 import ProjectCard from "@/components/projects/ProjectCard";
 import { projects } from "@/data";
 
-const ProjectsPage = () => {
+const ProjectsPage: FC = () => {
   return (
     <>
       <h1 className="font-extrabold text-5xl mb-6 text-center">My Projects</h1>

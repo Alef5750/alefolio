@@ -13,4 +13,5 @@ export interface ITech {
   id: number;
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   name: string;
+  iconColor: string;
 }

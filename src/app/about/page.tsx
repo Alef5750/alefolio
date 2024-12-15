@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-const AboutPage = () => {
+const AboutPage: FC = () => {
   return (
     <section className="flex flex-col items-center">
       <h1 className="font-extrabold text-5xl mb-6 text-center">About Me</h1>
