@@ -14,7 +14,7 @@ const IconLink: FC<IconLinkProps> = ({ href, size, Icon, label }) => {
       href={href}
       target="_blank"
     >
-      <Icon className={`w-${size.width} h-${size.height}`} />
+      <Icon style={{ width: `${size.width}px`, height: `${size.height}px` }} />
       <span className="text-3xl">{label}</span>
     </Link>
   );
