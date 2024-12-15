@@ -6,4 +6,5 @@ export interface IProject {
   title: string;
   link: string;
   blurb: string;
+  // TODO: ADD "tech" array of strings
 }

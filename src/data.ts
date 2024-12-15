@@ -1,4 +1,4 @@
-import pomodoroImg from "@/assets/images/pomodoro-screenshot.png";
+import pomodoroImg from "@/assets/images/pomodoro-screenshot-1.png";
 export const projects = [
   {
     id: 1,
