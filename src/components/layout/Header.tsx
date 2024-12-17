@@ -8,7 +8,7 @@ const Header: FC = () => {
   return (
     <header className="sticky top-0 z-50 p-2 flex justify-around bg-green-300 text-3xl font-thin">
       <HamburgerMenu toggleMenu={() => setIsOpen(!isOpen)} isOpen={isOpen}>
-        <NavLinks />
+        <NavLinks handleClick={() => setIsOpen(false)} />
       </HamburgerMenu>
     </header>
   );
