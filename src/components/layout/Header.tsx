@@ -1,24 +1,15 @@
-import Link from "next/link";
-import React, { FC } from "react";
+"use client";
+import { FC, useState } from "react";
+import HamburgerMenu from "./HamburgerMenu";
+import NavLinks from "./NavLinks";
 
 const Header: FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky top-0 z-50 py-2 flex justify-around bg-green-300 text-3xl font-thin">
-      <Link className="hover:text-gray-500" href="/">
-        Home
-      </Link>
-      <Link className="hover:text-gray-500" href="/about">
-        About
-      </Link>
-      <Link className="hover:text-gray-500" href="/contact">
-        Contact Me
-      </Link>
-      <Link className="hover:text-gray-500" href="/projects">
-        My Projects
-      </Link>
-      <Link className="hover:text-gray-500" href="/technologies">
-        Technologies
-      </Link>
+    <header className="sticky top-0 z-50 p-2 flex justify-around bg-green-300 text-3xl font-thin">
+      <HamburgerMenu toggleMenu={() => setIsOpen(!isOpen)} isOpen={isOpen}>
+        <NavLinks />
+      </HamburgerMenu>
     </header>
   );
 };
